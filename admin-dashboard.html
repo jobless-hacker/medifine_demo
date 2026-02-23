@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Medifine Diagnostics</title>
+  <meta name="description" content="Owner control panel demo for booking visibility, report upload simulation, patient overview, and revenue snapshot.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="/admin-dashboard.html">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="portal-header-bar">
+    <div class="logo">MEDIFINE <span>DIAGNOSTICS</span></div>
+    <span>Admin Panel</span>
+  </header>
+
+  <main>
+    <section class="admin-container">
+      <h1>Dashboard Overview</h1>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h2>Today's Bookings</h2>
+          <p>18</p>
+        </div>
+        <div class="stat-card">
+          <h2>Reports Pending</h2>
+          <p>6</p>
+        </div>
+        <div class="stat-card">
+          <h2>Reports Completed</h2>
+          <p>12</p>
+        </div>
+        <div class="stat-card">
+          <h2>Estimated Revenue</h2>
+          <p>Rs 14,850</p>
+        </div>
+      </div>
+
+      <h2>Today's Appointments</h2>
+      <div class="booking-table-wrap">
+        <table class="booking-table">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Test</th>
+            <th scope="col">Time Slot</th>
+            <th scope="col">Status</th>
+          </tr>
+          <tr>
+            <td>Ramesh K</td>
+            <td>CBC Test</td>
+            <td>9:00 AM - 11:00 AM</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Anita Rao</td>
+            <td>Thyroid Profile</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>Processing</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>Upload Report</h2>
+      <div class="upload-box">
+        <label for="patientIdUpload">Patient ID</label>
+        <input id="patientIdUpload" type="text" placeholder="Enter Patient ID (e.g. MF10245)">
+        <label for="reportFileUpload">Report File</label>
+        <input id="reportFileUpload" type="file">
+        <button class="primary-btn" type="button">Upload Report</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
