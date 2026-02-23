@@ -3,54 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WhatsApp Automation | Medifine Diagnostics</title>
-  <meta name="description" content="Visual WhatsApp automation demo for Medifine Diagnostics confirmations, reminders, reports, and promotions.">
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="canonical" href="/whatsapp-flow.html">
+  <title>Incident Response Communication Flow | B. Santhosh Goud</title>
+  <meta name="description" content="Communication workflow for SOC incidents by B. Santhosh Goud. Includes detection handoff, stakeholder updates, and closure notes.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://jobless-hacker.github.io/medifine_demo/whatsapp-flow.html">
   <link rel="icon" href="data:,">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Incident Response Communication Flow">
+  <meta property="og:description" content="How incident updates move from detection to closure with SOC clarity.">
+  <meta property="og:url" content="https://jobless-hacker.github.io/medifine_demo/whatsapp-flow.html">
+  <meta property="og:image" content="https://jobless-hacker.github.io/medifine_demo/social-preview.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="portal-header-bar">
-    <a href="index.html" class="logo">MEDIFINE <span>DIAGNOSTICS</span></a>
-    <a href="index.html" class="portal-logout">Home</a>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      B. Santhosh Goud
+      <span class="brand-sub">Incident Response Workflow</span>
+    </a>
+    <button class="menu-btn" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="admin-dashboard.html">SOC Dashboard</a>
+      <a href="whatsapp-flow.html">IR Flow</a>
+      <a href="booking.html">Hire Me</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="whatsapp-section">
-      <h1>Automated WhatsApp Communication Flow</h1>
-      <p>Efficient - Instant - Professional</p>
+  <main class="page-shell">
+    <section class="sub-hero">
+      <p class="section-eyebrow">Response Operations</p>
+      <h1>Incident communication flow from detection to closure</h1>
+      <p>
+        Clear communication is a security control. This sequence shows how analysts and stakeholders
+        stay aligned during high-pressure events.
+      </p>
+    </section>
 
-      <div class="chat-box">
-        <div class="message bot">
-          <p>Thank you for booking with Medifine Diagnostics, Ramesh K.</p>
-          <p>Your CBC Test is scheduled for 9:00 AM - 11:00 AM tomorrow.</p>
-        </div>
+    <section class="flow-list">
+      <article class="flow-step">
+        <h3>Step 1: Alert intake and initial validation</h3>
+        <p><strong>Message:</strong> New high-severity signal detected from WAF and authentication logs.</p>
+        <p><strong>Owner:</strong> SOC analyst on shift.</p>
+      </article>
+      <p class="flow-arrow">DOWNSTREAM</p>
+      <article class="flow-step">
+        <h3>Step 2: Immediate containment update</h3>
+        <p><strong>Message:</strong> Source blocked, affected accounts isolated, forensic capture started.</p>
+        <p><strong>Owner:</strong> Security operations and infrastructure response.</p>
+      </article>
+      <p class="flow-arrow">DOWNSTREAM</p>
+      <article class="flow-step">
+        <h3>Step 3: Stakeholder brief</h3>
+        <p><strong>Message:</strong> Incident summary, impact scope, and expected next update time.</p>
+        <p><strong>Owner:</strong> Incident coordinator.</p>
+      </article>
+      <p class="flow-arrow">DOWNSTREAM</p>
+      <article class="flow-step">
+        <h3>Step 4: Recovery and monitoring notice</h3>
+        <p><strong>Message:</strong> Systems restored, heightened monitoring active, no ongoing compromise observed.</p>
+        <p><strong>Owner:</strong> SOC lead with engineering confirmation.</p>
+      </article>
+      <p class="flow-arrow">DOWNSTREAM</p>
+      <article class="flow-step">
+        <h3>Step 5: Post-incident closure note</h3>
+        <p><strong>Message:</strong> Root cause, lessons learned, and actions scheduled to prevent recurrence.</p>
+        <p><strong>Owner:</strong> Security team with product and infra leads.</p>
+      </article>
+    </section>
 
-        <div class="message bot">
-          <p>Reminder: Our technician will arrive within your selected time slot.</p>
-        </div>
-
-        <div class="message bot">
-          <p>Your report is ready.</p>
-          <p>Download here: www.medifinediagnostics.in/report/MF10245</p>
-        </div>
-
-        <div class="message bot highlight">
-          <p>Special Offer</p>
-          <p>Book our Diabetic Health Package at discounted price this week.</p>
-          <p>Reply YES to get details.</p>
-        </div>
+    <section class="panel">
+      <h2>Why this matters for hiring</h2>
+      <p>
+        Strong security candidates do more than detect issues. They communicate fast, clearly, and with
+        accountable ownership. This is core to SOC maturity and incident confidence.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="booking.html">Discuss opportunities</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Flat No: 102, Bhanu Pedapudi Towers, JNTU Rd, KPHB Phase 6, Kukatpally</p>
-    <p>2026 Medifine Diagnostics</p>
+    <p>Copyright <span class="year">2026</span> B. Santhosh Goud</p>
   </footer>
 </body>
 </html>

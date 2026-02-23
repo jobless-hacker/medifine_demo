@@ -3,78 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard | Medifine Diagnostics</title>
-  <meta name="description" content="Owner control panel demo for booking visibility, report upload simulation, patient overview, and revenue snapshot.">
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="canonical" href="/admin-dashboard.html">
+  <title>SOC Dashboard Simulation | B. Santhosh Goud</title>
+  <meta name="description" content="High-level SOC dashboard simulation by B. Santhosh Goud with triage metrics, incident feed, and response priorities.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://jobless-hacker.github.io/medifine_demo/admin-dashboard.html">
   <link rel="icon" href="data:,">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SOC Dashboard Simulation">
+  <meta property="og:description" content="Operational security view for alert triage and incident handling.">
+  <meta property="og:url" content="https://jobless-hacker.github.io/medifine_demo/admin-dashboard.html">
+  <meta property="og:image" content="https://jobless-hacker.github.io/medifine_demo/social-preview.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="portal-header-bar">
-    <div class="logo">MEDIFINE <span>DIAGNOSTICS</span></div>
-    <span>Admin Panel</span>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      B. Santhosh Goud
+      <span class="brand-sub">SOC Dashboard Simulation</span>
+    </a>
+    <button class="menu-btn" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="admin-dashboard.html">SOC Dashboard</a>
+      <a href="whatsapp-flow.html">IR Flow</a>
+      <a href="booking.html">Hire Me</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="admin-container">
-      <h1>Dashboard Overview</h1>
+  <main class="page-shell">
+    <section class="sub-hero">
+      <p class="section-eyebrow">Security Operations</p>
+      <h1>Top-level SOC command view</h1>
+      <p>
+        This demo shows how alerts can be prioritized, investigated, and escalated in a practical SOC workflow.
+        It reflects the triage logic and communication discipline used in incident operations.
+      </p>
+    </section>
 
-      <div class="stats-grid">
-        <div class="stat-card">
-          <h2>Today's Bookings</h2>
-          <p>18</p>
-        </div>
-        <div class="stat-card">
-          <h2>Reports Pending</h2>
-          <p>6</p>
-        </div>
-        <div class="stat-card">
-          <h2>Reports Completed</h2>
-          <p>12</p>
-        </div>
-        <div class="stat-card">
-          <h2>Estimated Revenue</h2>
-          <p>Rs 14,850</p>
-        </div>
+    <section class="dashboard-grid">
+      <div class="metric-row">
+        <article class="metric-card">
+          <h3>Events analyzed (24h)</h3>
+          <p class="metric-number">247,320</p>
+          <p>Combined endpoint, network, and authentication signals.</p>
+        </article>
+        <article class="metric-card">
+          <h3>High severity alerts</h3>
+          <p class="metric-number danger">12</p>
+          <p>Alerts requiring active analyst handling and containment checks.</p>
+        </article>
+        <article class="metric-card">
+          <h3>Median triage time</h3>
+          <p class="metric-number warn">22 min</p>
+          <p>Current operational median from alert open to first investigation action.</p>
+        </article>
       </div>
 
-      <h2>Today's Appointments</h2>
-      <div class="booking-table-wrap">
-        <table class="booking-table">
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Test</th>
-            <th scope="col">Time Slot</th>
-            <th scope="col">Status</th>
-          </tr>
-          <tr>
-            <td>Ramesh K</td>
-            <td>CBC Test</td>
-            <td>9:00 AM - 11:00 AM</td>
-            <td>Completed</td>
-          </tr>
-          <tr>
-            <td>Anita Rao</td>
-            <td>Thyroid Profile</td>
-            <td>11:00 AM - 1:00 PM</td>
-            <td>Processing</td>
-          </tr>
-        </table>
-      </div>
+      <article class="metric-card">
+        <h3>Incident feed</h3>
+        <div class="table-wrap">
+          <table class="alerts-table">
+            <caption>Recent alerts with SOC routing</caption>
+            <thead>
+              <tr>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Signal</th>
+                <th scope="col">Source</th>
+                <th scope="col">Severity</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2026-02-23 18:42</td>
+                <td>Repeated failed logins from geo-anomalous source</td>
+                <td>IAM gateway</td>
+                <td><span class="status-tag high">High</span></td>
+                <td>Escalated to identity response owner</td>
+              </tr>
+              <tr>
+                <td>2026-02-23 18:10</td>
+                <td>Suspicious SQL pattern in POST payload</td>
+                <td>WAF logs</td>
+                <td><span class="status-tag critical">Critical</span></td>
+                <td>Blocked and under forensics review</td>
+              </tr>
+              <tr>
+                <td>2026-02-23 17:55</td>
+                <td>Horizontal scan behavior across subnet</td>
+                <td>Network IDS</td>
+                <td><span class="status-tag medium">Medium</span></td>
+                <td>Validated, watchlist enabled</td>
+              </tr>
+              <tr>
+                <td>2026-02-23 17:30</td>
+                <td>Unusual outbound DNS volume</td>
+                <td>NetFlow collector</td>
+                <td><span class="status-tag low">Low</span></td>
+                <td>Queued for trend monitoring</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-      <h2>Upload Report</h2>
-      <div class="upload-box">
-        <label for="patientIdUpload">Patient ID</label>
-        <input id="patientIdUpload" type="text" placeholder="Enter Patient ID (e.g. MF10245)">
-        <label for="reportFileUpload">Report File</label>
-        <input id="reportFileUpload" type="file">
-        <button class="primary-btn" type="button">Upload Report</button>
-      </div>
+      <article class="metric-card">
+        <h3>Analyst action priorities</h3>
+        <ul>
+          <li>Contain active injection attempts and rotate affected credentials.</li>
+          <li>Cross-check endpoint telemetry for post-authentication movement.</li>
+          <li>Tune noisy rules to protect analyst focus and reduce false positives.</li>
+          <li>Publish incident summary for leadership and engineering stakeholders.</li>
+        </ul>
+      </article>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>SOC simulation by B. Santhosh Goud</p>
+    <p>Copyright <span class="year">2026</span> B. Santhosh Goud</p>
+  </footer>
 </body>
 </html>

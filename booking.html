@@ -3,85 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Home Sample | Medifine Diagnostics</title>
-  <meta name="description" content="Book home sample collection with Medifine Diagnostics, Kukatpally.">
+  <title>Hire B. Santhosh Goud | Full-Stack + Cybersecurity</title>
+  <meta name="description" content="Contact B. Santhosh Goud for entry-level SOC, penetration testing, and secure full-stack development opportunities.">
   <meta name="robots" content="index,follow">
-  <link rel="canonical" href="/booking.html">
+  <link rel="canonical" href="https://jobless-hacker.github.io/medifine_demo/booking.html">
   <link rel="icon" href="data:,">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Book Home Sample | Medifine Diagnostics">
-  <meta property="og:description" content="Book home sample collection with Medifine Diagnostics, Kukatpally.">
-  <meta property="og:url" content="/booking.html">
-  <meta property="og:image" content="/social-preview.svg">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="/social-preview.svg">
+  <meta property="og:title" content="Hire B. Santhosh Goud">
+  <meta property="og:description" content="Submit internship and project opportunities for full-stack and cybersecurity roles.">
+  <meta property="og:url" content="https://jobless-hacker.github.io/medifine_demo/booking.html">
+  <meta property="og:image" content="https://jobless-hacker.github.io/medifine_demo/social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://jobless-hacker.github.io/medifine_demo/social-preview.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="portal-header-bar">
-    <a href="index.html" class="logo">MEDIFINE <span>DIAGNOSTICS</span></a>
-    <a href="index.html" class="portal-logout">Home</a>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      B. Santhosh Goud
+      <span class="brand-sub">Full-Stack + Cybersecurity</span>
+    </a>
+    <button class="menu-btn" id="menuButton" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="admin-dashboard.html">SOC Dashboard</a>
+      <a href="whatsapp-flow.html">IR Flow</a>
+      <a href="booking.html">Hire Me</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="booking-section">
-      <h1>Book Home Sample Collection</h1>
-      <p>Fast | Affordable | On-Time Reports</p>
+  <main class="page-shell">
+    <section class="sub-hero">
+      <p class="section-eyebrow">Hiring and Collaboration</p>
+      <h1>Start a conversation for SOC or full-stack opportunities</h1>
+      <p>
+        I am actively looking for internship and entry-level roles in SOC, penetration testing, or security operations.
+        I also take secure web development assignments where cybersecurity is part of delivery scope.
+      </p>
+    </section>
 
-      <form id="bookingForm">
-        <label for="patientName">Full Name</label>
-        <input id="patientName" type="text" autocomplete="name" required>
+    <section class="split-grid">
+      <article class="info-card">
+        <h2>Direct details</h2>
+        <p><strong>Name:</strong> B. Santhosh Goud</p>
+        <p><strong>Location:</strong> Hyderabad, Telangana</p>
+        <p><strong>Email:</strong> santoshtukaramfrds@gmail.com</p>
+        <p><strong>Phone:</strong> +91 7036958163</p>
+        <ul>
+          <li>Preferred roles: SOC Analyst Intern, Cybersecurity Intern, Junior Security Engineer</li>
+          <li>Also open to: Full-stack developer roles with security ownership</li>
+          <li>Response time target: within 24 hours</li>
+        </ul>
+      </article>
 
-        <label for="mobileNumber">Mobile Number</label>
-        <input id="mobileNumber" type="tel" inputmode="numeric" autocomplete="tel" required>
+      <article class="form-card">
+        <h2>Opportunity form</h2>
+        <form id="hireForm">
+          <label class="field-label" for="name">Your Name</label>
+          <input class="field-input" id="name" name="name" type="text" required>
 
-        <label for="testPackage">Select Test / Package</label>
-        <select id="testPackage" required>
-          <option value="">-- Select --</option>
-          <option>CBC Test</option>
-          <option>Thyroid Profile</option>
-          <option>Diabetic Health Package</option>
-          <option>Cardiac Package</option>
-          <option>Executive Master Check</option>
-        </select>
+          <label class="field-label" for="email">Email</label>
+          <input class="field-input" id="email" name="email" type="email" required>
 
-        <label for="bookingDate">Select Date</label>
-        <input id="bookingDate" type="date" required>
+          <label class="field-label" for="roleType">Role Type</label>
+          <select class="field-select" id="roleType" name="roleType" required>
+            <option value="">Select role type</option>
+            <option>SOC Analyst Internship</option>
+            <option>Penetration Testing Internship</option>
+            <option>Junior Cybersecurity Role</option>
+            <option>Full-Stack Developer Role</option>
+            <option>Freelance Security Project</option>
+          </select>
 
-        <label for="timeSlot">Select Time Slot</label>
-        <select id="timeSlot" required>
-          <option value="">-- Select Time --</option>
-          <option>7:00 AM - 9:00 AM</option>
-          <option>9:00 AM - 11:00 AM</option>
-          <option>11:00 AM - 1:00 PM</option>
-          <option>3:00 PM - 5:00 PM</option>
-          <option>5:00 PM - 7:00 PM</option>
-        </select>
+          <label class="field-label" for="details">Project or role details</label>
+          <textarea class="field-textarea" id="details" name="details" required></textarea>
 
-        <label class="checkbox-label">
-          <input type="checkbox" id="homeVisit">
-          Home Sample Collection Required
-        </label>
+          <button class="btn btn-primary" type="submit">Prepare Email Draft</button>
+        </form>
+        <p class="form-note">
+          The form creates a ready-to-send email draft addressed to santoshtukaramfrds@gmail.com.
+        </p>
 
-        <button type="submit" class="primary-btn">Confirm Booking</button>
-      </form>
-
-      <div id="confirmation" class="confirmation-box" aria-live="polite" style="display:none;">
-        <h3>Booking Confirmed</h3>
-        <p>Our team will contact you shortly.</p>
-        <p>Thank you for choosing Medifine Diagnostics.</p>
-      </div>
+        <div id="submitMessage" class="success-box hidden" aria-live="polite">
+          Draft ready. Click <a id="mailToLink" class="inline-link" href="mailto:santoshtukaramfrds@gmail.com">this mail link</a> to send now.
+        </div>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Flat No: 102, Bhanu Pedapudi Towers, JNTU Rd, KPHB Phase 6, Kukatpally</p>
-    <p>2026 Medifine Diagnostics</p>
+    <p>Copyright <span class="year">2026</span> B. Santhosh Goud</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

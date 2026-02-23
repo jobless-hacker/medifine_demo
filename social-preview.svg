@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Medifine Diagnostics - Kukatpally</title>
-  <desc id="desc">Affordable and accurate blood tests in Kukatpally with home sample collection and fast reports.</desc>
+  <title id="title">B. Santhosh Goud - Full-Stack Developer and Cybersecurity Expert</title>
+  <desc id="desc">SOC analysis, penetration testing projects, and secure full-stack engineering profile.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f2b46"/>
-      <stop offset="100%" stop-color="#1a4f74"/>
+      <stop offset="0%" stop-color="#07131f"/>
+      <stop offset="100%" stop-color="#12314b"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1040" cy="120" r="170" fill="#2ed1b2" opacity="0.28"/>
-  <circle cx="160" cy="540" r="220" fill="#19b99a" opacity="0.2"/>
-  <text x="90" y="190" fill="#2ed1b2" font-family="Manrope, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="1">MEDIFINE DIAGNOSTICS</text>
-  <text x="90" y="285" fill="#f5f7fa" font-family="Fraunces, Georgia, serif" font-size="70" font-weight="700">Low Cost Blood Tests</text>
-  <text x="90" y="360" fill="#f5f7fa" font-family="Fraunces, Georgia, serif" font-size="70" font-weight="700">in Kukatpally</text>
-  <text x="90" y="440" fill="#dbe4ec" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="600">Precision You Can Trust. Care You Can Afford.</text>
-  <text x="90" y="520" fill="#f5f7fa" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="700">Book Home Sample Collection</text>
+  <circle cx="1040" cy="80" r="180" fill="#f8a23b" opacity="0.22"/>
+  <circle cx="170" cy="570" r="220" fill="#19c37d" opacity="0.18"/>
+  <text x="84" y="165" fill="#8ff0c4" font-family="Space Grotesk, Arial, sans-serif" font-size="38" font-weight="700">B. SANTHOSH GOUD</text>
+  <text x="84" y="265" fill="#edf6fd" font-family="Space Grotesk, Arial, sans-serif" font-size="66" font-weight="700">Full-Stack Developer +</text>
+  <text x="84" y="345" fill="#edf6fd" font-family="Space Grotesk, Arial, sans-serif" font-size="66" font-weight="700">Cybersecurity Expert</text>
+  <text x="84" y="435" fill="#c8dae8" font-family="IBM Plex Sans, Arial, sans-serif" font-size="31" font-weight="500">SOC Analysis | Penetration Testing | ML Threat Detection</text>
+  <text x="84" y="515" fill="#edf6fd" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="600">Hyderabad, Telangana</text>
 </svg>

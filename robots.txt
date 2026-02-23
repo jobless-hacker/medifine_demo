@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.medifinediagnostics.in/sitemap.xml
+Sitemap: https://jobless-hacker.github.io/medifine_demo/sitemap.xml
